@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>580</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>580</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>580</width>
+    <height>760</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>558</width>
+     <height>738</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>558</width>
+     <height>738</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>558</width>
+     <height>738</height>
+    </size>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="public_page">
+    <attribute name="title">
+     <string>公共聊天室</string>
+    </attribute>
+    <widget class="QListWidget" name="pub_msg_list">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>551</width>
+       <height>491</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>551</width>
+       <height>491</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>551</width>
+       <height>491</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="pub_msg_input">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>530</y>
+       <width>451</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pub_btn_send">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>610</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pub_lable_time">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>680</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pub_btn_help">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>670</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>？</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="private_page">
+    <attribute name="title">
+     <string>匿名聊天室</string>
+    </attribute>
+    <widget class="QListWidget" name="pri_msg_list">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>551</width>
+       <height>491</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="pri_msg_input">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>530</y>
+       <width>451</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pri_btn_change">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>550</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>更换匿名</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pri_btn_send">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>610</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pri_lable_time">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>680</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pri_lable_text">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>500</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>当前匿名身份：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="pri_lable_name">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>500</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>NULL</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pri_btn_help">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>670</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>？</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="personal_page">
+    <attribute name="title">
+     <string>私发聊天</string>
+    </attribute>
+    <widget class="QListWidget" name="per_msg_list">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>551</width>
+       <height>491</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="per_msg_input">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>570</y>
+       <width>421</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="per_text_searchId">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>520</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="per_lable_text">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>520</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>对方MomoTalk Id：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="per_btn_send">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>600</y>
+       <width>71</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>发送</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="per_lable_time">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>680</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="per_btn_help">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>670</y>
+       <width>31</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>？</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="per_btn_search">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>510</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="information_page">
+    <attribute name="title">
+     <string>个人信息</string>
+    </attribute>
+    <widget class="QLabel" name="ifo_lable_time">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>680</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ifo_btn_changeAC">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>640</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>切换账号</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ifo_btn_edit">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>640</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>编辑资料</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="ifo_btn_changePW">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>640</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>修改密码</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_id">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;ID：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_name">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>170</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;昵称：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_sex">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>230</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;性别：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_birthday">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>290</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;生日：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_mail">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>350</y>
+       <width>51</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;邮箱：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_info">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>410</y>
+       <width>91</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;个人简介：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ifo_use_name">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>170</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="ifo_user_mail">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>350</y>
+       <width>231</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_user_id">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>110</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="ifo_user_sex">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>230</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>保密</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>男</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>女</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QDateEdit" name="ifo_user_date">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>290</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="ifo_user_info">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>450</y>
+       <width>451</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;这个人很懒，还什么都没有写哦&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="ifo_text_title">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>341</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Personal Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="help_page">
+    <attribute name="title">
+     <string>问题帮助</string>
+    </attribute>
+    <widget class="QListWidget" name="hlp_msg_list">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>531</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>公共聊天室：</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>        每次用户开启应用后，会自动从服务器同步最近30条消息。同时在该</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>聊天室聊天的过程中，可通过点击用户的id来访问用户的个人信息。请注意</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>所有的信息都将存贮在服务器中备份，管理员可能会对不适当的发言做出包</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>括但不限于撤回，封禁等处罚。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>匿名聊天室：</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>        每当用户进入匿名聊天室后，将会自动获取一个匿名身份，或可进行手</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>动更换身份。在匿名聊天室中，所有的消息都不会进行存储，这也就意味着</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>只有当用户上线后才可接收到匿名聊天室的消息，在退出应用后所有的消息</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>也都无法再次查看。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>        虽然本聊天室为纯匿名且不保存聊天消息，但切记网络不是法外之地，</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>本软件仅为学习开发所用，不承担任何因不当言论而产生的后果。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>私发聊天：</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>       用户可通过已知用户的id进行私发聊天，该聊天内容只会在两个通信的</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>用户之间传输，因此私发聊天服务器并不会进行存储，即用户退出应用后不</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>会保存聊天记录。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>       输入接收消息旁有一个查询按钮，在输入对应的id后即可查询到对方的</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>用户资料和在线状态，以便更好交流。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>       注意在输入用户id时请确认正确，否则对方将无法收到对应消息。除此</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>之外，请勿滥用该功能对用户进行骚扰，管理员有权限对不合规使用用户进</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>行封禁等处罚措施。</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>软件说明：</string>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>软件名称：MomoTalk</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>版本：1.0.0</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>开发者：Li Zhiwei</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>所属单位：华中科技大学电信学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>版权信息：© 2023 华中科技大学电信学院</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>联系信息：</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>电子邮件：minjer@foxmail.com</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string/>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>系统要求：</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>操作系统：Windows 10或更高版本</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>储存：300 MB可用磁盘空间</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>网络连接：需要</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
